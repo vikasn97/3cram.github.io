@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <title>Android</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <body>
+    <!-- --------------Navigation------------ -->
+    <div class="w3-container">
+      <div class="w3-bar w3-black">
+        <a href="index.html" class="w3-bar-item w3-button w3-mobile ">Home</a>
+        <a href="about.html" class="w3-bar-item w3-button w3-mobile">About</a>
+        <a href="contact.html" class="w3-bar-item w3-button w3-mobile">Contact</a>
+        <a href="windows.html" class="w3-bar-item w3-button w3-mobile">Windows</a>
+        <a href="android.html" class="w3-bar-item w3-button w3-mobile w3-green">Android</a>
+        <a href="developer.html" class="w3-bar-item w3-button w3-mobile">Developers</a>
+        <div class="w3-dropdown-hover w3-mobile">
+          <button class="w3-button">More <i class="fa fa-caret-down"></i></button>
+          <div class="w3-dropdown-content w3-bar-block w3-dark-grey">
+            <a href="#" class="w3-bar-item w3-button w3-mobile">Link 1</a>
+            <a href="#" class="w3-bar-item w3-button w3-mobile">Link 2</a>
+            <a href="#" class="w3-bar-item w3-button w3-mobile">Link 3</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------------main------------- -->
+    <div class="w3-container">
+      <!-- ------------sidebar------------- -->
+      <div class="w3-sidebar w3-bar-block w3-black w3-card" style="width: 130px">
+        <h5 class="w3-bar-item w3-dark-grey">Apps</h5>
+        <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Google')">Google</button>
+        <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Microsoft')">Microsoft</button>
+      </div>
+
+      <div style="margin-left: 130px">
+        <div id="Google" class="w3-container city w3-animate-left" style="display: block">
+          <h2 style="margin-left: 10px">Best Android apps</h2>
+          <ol>
+            <li>
+              <a href="https://authy.com/" target="_blank"><img src="icon/assistant.png" alt="google" width="20" /> Assistant</a>
+            </li>            
+            <li>
+              <a href="https://authy.com/" target="_blank"><img src="icon/calender.png" alt="google" width="18" /> Calender</a>
+            </li>            
+            <li>
+              <a href="https://authy.com/" target="_blank"><img src="icon/chrome.png" alt="google" width="20" /> Chrome</a>
+            </li>            
+            <li>
+              <a href="https://authy.com/" target="_blank"><img src="icon/drive.png" alt="google" width="20" /> Drive</a>
+            </li>            
+            <li>
+              <a href="https://authy.com/" target="_blank"><img src="icon/duo.png" alt="google" width="20" /> Duo</a>
+            </li>            
+            <li>
+              <a href="https://authy.com/" target="_blank"><img src="icon/files.png" alt="google" width="22" /> Files</a>
+            </li>            
+            <li>
+              <a href="https://authy.com/" target="_blank"><img src="icon/gallery.png" alt="google" width="22" /> Gallery</a>
+            </li>            
+            <li>
+              <a href="https://authy.com/" target="_blank"><img src="icon/gmail.svg" alt="google" width="20" /> Gmail</a>
+            </li>            
+            <li>
+              <a href="https://authy.com/" target="_blank"><img src="icon/google.png" alt="google" width="20" /> Google</a>
+            </li>            
+            <li>
+              <a href="https://authy.com/" target="_blank"><img src="icon/one.png" alt="google" width="20" /> Google One</a>
+            </li>            
+            <li>
+              <a href="https://authy.com/" target="_blank"><img src="icon/pay.jpg" alt="google" width="24" /> GPay</a>
+            </li>            
+            <li>
+              <a href="https://authy.com/" target="_blank"><img src="icon/keep.png" alt="google" width="22" /> Keep Notes</a>
+            </li>            
+            <li>
+              <a href="https://authy.com/" target="_blank"><img src="icon/map.png" alt="google" width="20" /> Maps</a>
+            </li>            
+            <li>
+              <a href="https://authy.com/" target="_blank"><img src="icon/photos.png" alt="google" width="20" /> Photos</a>
+            </li>            
+            <li>
+              <a href="https://authy.com/" target="_blank"><img src="icon/youtube.png" alt="google" width="20" /> Youtube</a>
+            </li>            
+          </ol>       
+      </div>
+    </div>
+
+    <script>
+      function openLink(evt, animName) {
+        var i, x, tablinks;
+        x = document.getElementsByClassName("city");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < x.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+        }
+        document.getElementById(animName).style.display = "block";
+        evt.currentTarget.className += " w3-red";
+      }
+    </script>
+  </body>
+</html>

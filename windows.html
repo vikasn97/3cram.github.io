@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <title>TOP 10</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <body>
+    <!-- --------------Navigation------------ -->
+    <div class="w3-container">
+      <div class="w3-bar w3-black">
+        <a href="index.html" class="w3-bar-item w3-button w3-mobile ">Home</a>
+        <a href="about.html" class="w3-bar-item w3-button w3-mobile">About</a>
+        <a href="contact.html" class="w3-bar-item w3-button w3-mobile">Contact</a>
+        <a href="windows.html" class="w3-bar-item w3-button w3-mobile w3-green">Windows</a>
+        <a href="android.html" class="w3-bar-item w3-button w3-mobile">Android</a>
+        <a href="developer.html" class="w3-bar-item w3-button w3-mobile">Developers</a>
+        <div class="w3-dropdown-hover w3-mobile">
+          <button class="w3-button">More <i class="fa fa-caret-down"></i></button>
+          <div class="w3-dropdown-content w3-bar-block w3-dark-grey">
+            <a href="#" class="w3-bar-item w3-button w3-mobile">Link 1</a>
+            <a href="#" class="w3-bar-item w3-button w3-mobile">Link 2</a>
+            <a href="#" class="w3-bar-item w3-button w3-mobile">Link 3</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------------main------------- -->
+    <div class="w3-container">
+      <!-- ------------sidebar------------- -->
+      <div class="w3-sidebar w3-bar-block w3-black w3-card" style="width:130px" >
+        <h5 class="w3-bar-item w3-dark-grey">TOP 10</h5>
+        <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Security')">Security</button>
+        <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Email')">Email</button>
+        <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Cloud')">Cloud Storage</button>
+      </div>
+
+      <div style="margin-left: 130px">
+        <div id="Security" class="w3-container city w3-animate-left" style="display: block">
+          <h2 style="margin-left: 10px">Best Authenticator</h2>
+          <ol>
+            <li>
+              <a href="https://authy.com/" target="_blank"><img src="icon/authy.png" alt="gmail" width="20" /> Authy</a>
+            </li>
+            <li>
+              <a href="https://www.microsoft.com/en-us/security/mobile-authenticator-app#primaryR3" target="_blank"
+                ><img src="icon/mauthy.png" alt="gmail" width="20" /> Microsoft Authenticator</a
+              >
+            </li>
+          </ol>
+
+          <h2 style="margin-left: 10px">Best Password Manager</h2>
+          <ol>
+            <li>
+              <a href="https://bitwarden.com/" target="_blank"><img src="icon/bitwarden.png" alt="gmail" width="20" /> Bitwarden</a>
+            </li>
+            <li>
+              <a href="https://www.lastpass.com/" target="_blank"><img src="icon/lastpass.png" alt="gmail" width="20" /> LastPass</a>
+            </li>
+          </ol>
+        </div>
+
+        <div id="Email" class="w3-container city w3-animate-left" style="display: none">
+          <h2 style="margin-left: 10px">Best Email Service</h2>
+          <ol>
+            <li>
+              <a href="https://mail.google.com/" target="_blank"><img src="icon/gmail.svg" alt="gmail" width="20" /> Gmail</a>
+            </li>
+            <li>
+              <a href="https://outlook.live.com/" target="_blank"><img src="icon/outlook.svg" alt="gmail" width="20" /> Outlook</a>
+            </li>
+            <li>
+              <a href="https://login.yahoo.com/" target="_blank"><img src="icon/ymail.png" alt="gmail" width="20" /> Yahoo!</a>
+            </li>
+            <li>
+              <a href="https://www.icloud.com/mail" target="_blank"><img src="icon/iCloud.png" alt="gmail" width="20" /> iCloud</a>
+            </li>
+          </ol>
+        </div>
+
+        <div id="Cloud" class="w3-container city w3-animate-left" style="display: none">
+          <h2 style="margin-left: 10px">Best Cloud Storage Service</h2>
+          <ol>
+            <li>
+              <a href="https://mail.google.com/" target="_blank"><img src="icon/drive.png" alt="gmail" width="20" /> Google Drive</a>
+            </li>
+            <li>
+              <a href="https://outlook.live.com/" target="_blank"><img src="icon/onedrive.svg" alt="gmail" width="20" /> OneDrive</a>
+            </li>
+            <li>
+              <a href="https://login.yahoo.com/" target="_blank"><img src="icon/mega.png" alt="gmail" width="20" /> Mega</a>
+            </li>
+            <li>
+              <a href="https://www.icloud.com/iclouddrive" target="_blank"><img src="icon/iCloud.png" alt="gmail" width="20" /> iCloud Drive</a>
+            </li>
+            <li>
+              <a href="https://app.digiboxx.com/login" target="_blank"><img src="icon/digiboxx.png" alt="gmail" width="20" /> DIGIBOXX</a>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function openLink(evt, animName) {
+        var i, x, tablinks;
+        x = document.getElementsByClassName("city");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < x.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+        }
+        document.getElementById(animName).style.display = "block";
+        evt.currentTarget.className += " w3-red";
+      }
+    </script>
+  </body>
+</html>
