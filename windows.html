@@ -3,12 +3,12 @@
   <title>TOP 10</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="style.css" />
-    <script src="script.js" crossorigin="anonymous"></script>
+  <script src="script.js" crossorigin="anonymous"></script>
   <body>
     <!-- --------------Navigation------------ -->
     <div class="w3-container">
       <div class="w3-bar w3-black">
-        <a href="index.html" class="w3-bar-item w3-button w3-mobile ">Home</a>
+        <a href="index.html" class="w3-bar-item w3-button w3-mobile">Home</a>
         <a href="about.html" class="w3-bar-item w3-button w3-mobile">About</a>
         <a href="contact.html" class="w3-bar-item w3-button w3-mobile">Contact</a>
         <a href="windows.html" class="w3-bar-item w3-button w3-mobile w3-green">Windows</a>
@@ -28,11 +28,12 @@
     <!-- ------------main------------- -->
     <div class="w3-container">
       <!-- ------------sidebar------------- -->
-      <div class="w3-sidebar w3-bar-block w3-black w3-card" style="width:130px" >
+      <div class="w3-sidebar w3-bar-block w3-black w3-card" style="width: 130px">
         <h5 class="w3-bar-item w3-dark-grey">TOP 10</h5>
         <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Security')">Security</button>
         <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Email')">Email</button>
         <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Cloud')">Cloud Storage</button>
+        <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Print')">Printer</button>
       </div>
 
       <div style="margin-left: 130px">
@@ -40,11 +41,11 @@
           <h2 style="margin-left: 10px">Best Authenticator</h2>
           <ol>
             <li>
-              <a href="https://authy.com/" target="_blank"><img src="icon/authy.png" alt="gmail" width="20" /> Authy</a>
+              <a href="https://authy.com/" target="_blank"><img src="icon/authy.svg" alt="gmail" width="20" /> Authy</a>
             </li>
             <li>
               <a href="https://www.microsoft.com/en-us/security/mobile-authenticator-app#primaryR3" target="_blank"
-                ><img src="icon/mauthy.png" alt="gmail" width="20" /> Microsoft Authenticator</a
+                ><img src="icon/microsoft-authenticator.svg" alt="gmail" width="20" /> Microsoft Authenticator</a
               >
             </li>
           </ol>
@@ -70,10 +71,10 @@
               <a href="https://outlook.live.com/" target="_blank"><img src="icon/outlook.svg" alt="gmail" width="20" /> Outlook</a>
             </li>
             <li>
-              <a href="https://login.yahoo.com/" target="_blank"><img src="icon/ymail.png" alt="gmail" width="20" /> Yahoo!</a>
+              <a href="https://login.yahoo.com/" target="_blank"><img src="icon/ymail.svg" alt="gmail" width="20" /> Yahoo!</a>
             </li>
             <li>
-              <a href="https://www.icloud.com/mail" target="_blank"><img src="icon/iCloud.png" alt="gmail" width="20" /> iCloud</a>
+              <a href="https://www.icloud.com/mail" target="_blank"><img src="icon/icloud.svg" alt="gmail" width="20" /> iCloud</a>
             </li>
           </ol>
         </div>
@@ -82,7 +83,7 @@
           <h2 style="margin-left: 10px">Best Cloud Storage Service</h2>
           <ol>
             <li>
-              <a href="https://mail.google.com/" target="_blank"><img src="icon/drive.png" alt="gmail" width="20" /> Google Drive</a>
+              <a href="https://mail.google.com/" target="_blank"><img src="icon/drive.svg" alt="gmail" width="20" /> Google Drive</a>
             </li>
             <li>
               <a href="https://outlook.live.com/" target="_blank"><img src="icon/onedrive.svg" alt="gmail" width="20" /> OneDrive</a>
@@ -91,11 +92,36 @@
               <a href="https://login.yahoo.com/" target="_blank"><img src="icon/mega.png" alt="gmail" width="20" /> Mega</a>
             </li>
             <li>
-              <a href="https://www.icloud.com/iclouddrive" target="_blank"><img src="icon/iCloud.png" alt="gmail" width="20" /> iCloud Drive</a>
+              <a href="https://www.icloud.com/iclouddrive" target="_blank"><img src="icon/icloud.svg" alt="gmail" width="20" /> iCloud Drive</a>
             </li>
             <li>
               <a href="https://app.digiboxx.com/login" target="_blank"><img src="icon/digiboxx.png" alt="gmail" width="20" /> DIGIBOXX</a>
             </li>
+          </ol>
+        </div>
+
+        <div id="Print" class="w3-container city w3-animate-left" style="display: none">
+          <h2 style="margin-left: 10px">PDF TOOLS</h2>
+          <ol>
+            <li>Photoshop (Compress)</li>
+            <li>MS Print (For PDF)</li>
+            <li>
+              <a href="https://www.ilovepdf.com/compress_pdf" target="_blank">I💖PDF</a>
+            </li>
+            <li>
+              <a href="https://www.pdf2go.com/compress-pdf" target="_blank">PDF2GO (72dpi only)</a>
+            </li>
+          </ol>
+          <h2 style="margin-left: 10px">Print</h2>
+          <ol>
+            <li>Photo (High Quality)</li>
+            <li>Document (Normal Quality)</li>
+          </ol>
+
+          <h2 style="margin-left: 10px">Scan</h2>
+          <ol>
+            <li>Scan (300dpi only)</li>
+            <li>Save PDF (High Compression)</li>
           </ol>
         </div>
       </div>
