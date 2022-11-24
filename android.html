@@ -30,11 +30,21 @@
       <!-- ------------sidebar------------- -->
       <div class="w3-sidebar w3-bar-block w3-black w3-card" style="width: 130px">
         <h5 class="w3-bar-item w3-dark-grey">Apps</h5>
+        <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Entertainment')">Entertainment</button>
         <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Google')">Google</button>
         <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Microsoft')">Microsoft</button>
+        <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Security')">Security</button>
       </div>
 
       <div style="margin-left: 130px">
+        <div id="Google" class="w3-container city w3-animate-left" style="display: block">
+          <h2 style="margin-left: 10px">Best Android apps</h2>
+          <ol>
+            <li>
+              <a href="https://authy.com/" target="_blank"><img src="icon/google-assistant.svg" alt="google" width="20" /> Assistant</a>
+
+            </li>
+          </ol>
         <div id="Google" class="w3-container city w3-animate-left" style="display: block">
           <h2 style="margin-left: 10px">Best Android apps</h2>
           <ol>
@@ -87,6 +97,49 @@
               <a a href="https://authy.com/" target="_blank"><img src="icon/youtube.svg" alt="google" width="20" /> YouTube</a>
             </li>            
           </ol>       
+      </div>
+        <div id="Microsoft" class="w3-container city w3-animate-left" style="display: none">
+          <h2 style="margin-left: 10px">Best Android apps</h2>
+          <ol>
+            <li>
+              <a href="https://authy.com/" target="_blank"><img src="icon/microsoft-authenticator.svg" alt="google" width="20" /> Microsoft Authenticator</a>
+            </li>            
+            <li>
+              <a href="https://authy.com/" target="_blank"><img src="icon/Microsoft_Office_Excel_(2019–present).svg.png" alt="google" width="18" /> Microsoft Excel</a>
+            </li>            
+            <li>
+              <a href="https://authy.com/" target="_blank"><img src="icon/Microsoft_Office_PowerPoint_(2019–present).svg.png" alt="google" width="20" /> Microsoft PowerPoint</a>
+            </li>            
+            <li>
+              <a href="https://authy.com/" target="_blank"><img src="icon/Microsoft_Office_Word_(2019–present).svg.png" alt="google" width="20" /> Microsoft Word</a>
+            </li>         
+            <li>
+              <a href="https://authy.com/" target="_blank"><img src="icon/Phone_link.png" alt="google" width="20" /> Phone Link</a>
+            </li>            
+          </ol>       
+      </div>
+      <div id="Security" class="w3-container city w3-animate-left" style="display: none">
+        <h2 style="margin-left: 10px">Best Authenticator</h2>
+        <ol>
+          <li>
+            <a href="https://authy.com/" target="_blank"><img src="icon/authy.svg" alt="gmail" width="20" /> Authy</a>
+          </li>
+          <li>
+            <a href="https://www.microsoft.com/en-us/security/mobile-authenticator-app#primaryR3" target="_blank"
+              ><img src="icon/microsoft-authenticator.svg" alt="gmail" width="20" /> Microsoft Authenticator</a
+            >
+          </li>
+        </ol>
+
+        <h2 style="margin-left: 10px">Best Password Manager</h2>
+        <ol>
+          <li>
+            <a href="https://bitwarden.com/" target="_blank"><img src="icon/bitwarden.png" alt="gmail" width="20" /> Bitwarden</a>
+          </li>
+          <li>
+            <a href="https://www.lastpass.com/" target="_blank"><img src="icon/lastpass.png" alt="gmail" width="20" /> LastPass</a>
+          </li>
+        </ol>
       </div>
     </div>
 
