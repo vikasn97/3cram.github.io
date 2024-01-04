@@ -1,6 +1,8 @@
-* {box-sizing: border-box;}
+* {
+  box-sizing: border-box;
+}
 
-body { 
+body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -30,7 +32,7 @@ nav a:hover {
 
 /* Add an active class to highlight the current page */
 nav a.active {
-  background-color: #04AA6D;
+  background-color: #04aa6d;
   color: white;
 }
 
@@ -63,7 +65,7 @@ nav .icon {
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -78,7 +80,8 @@ nav .icon {
 }
 
 /* Add a dark background on topnav links and the dropdown button on hover */
-nav a:hover, .dropdown:hover .dropbtn {
+nav a:hover,
+.dropdown:hover .dropbtn {
   background-color: #555;
   color: white;
 }
@@ -93,7 +96,6 @@ nav a:hover, .dropdown:hover .dropbtn {
 .dropdown:hover .dropdown-content {
   display: block;
 }
-
 
 /* Gallary */
 div.gallery {
@@ -120,16 +122,15 @@ div.desc {
   width: 24.99999%;
 }
 
-
-
 /* ---------------------------Media Queries----------------------- */
 
 /* Extra small devices (phones, 600px and down) */
 @media screen and (max-width: 600px) {
-  body{
-    /* background-color: red;     */
+  body {
+    background-color: #fff;
   }
-  nav a:not(:first-child), .dropdown .dropbtn {
+  nav a:not(:first-child),
+  .dropdown .dropbtn {
     display: none;
   }
   nav a.icon {
@@ -138,7 +139,9 @@ div.desc {
   }
 
   /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-  nav.responsive {position: relative;}
+  nav.responsive {
+    position: relative;
+  }
   nav.responsive a.icon {
     position: absolute;
     right: 0;
@@ -150,8 +153,12 @@ div.desc {
     text-align: left;
   }
 
-  nav.responsive .dropdown {float: none;}
-  nav.responsive .dropdown-content {position: relative;}
+  nav.responsive .dropdown {
+    float: none;
+  }
+  nav.responsive .dropdown-content {
+    position: relative;
+  }
   nav.responsive .dropdown .dropbtn {
     display: block;
     width: 100%;
@@ -161,13 +168,12 @@ div.desc {
   .responsive {
     width: 100%;
   }
-
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media screen and (min-width: 600px){
-  body{
-    /* background-color: green;     */
+@media screen and (min-width: 600px) {
+  body {
+    background-color: #f1f1f1;
   }
 
   .responsive {
@@ -177,31 +183,28 @@ div.desc {
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media screen and (min-width: 768px){
-  body{
-    /* background-color: blue;     */
+@media screen and (min-width: 768px) {
+  body {
+    background-color: #f2f2f2;
   }
   .responsive {
     width: 25%;
     margin: 6px 0;
   }
-  
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media screen and (min-width: 992px){
-  body{
-    /* background-color: pink;     */
+@media screen and (min-width: 992px) {
+  body {
+    background-color: #f3f3f3;
   }
-  
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media screen and (min-width: 1200px){
-  body{
-    /* background-color: yellow;     */
+@media screen and (min-width: 1200px) {
+  body {
+    background-color: #f4f4ff;
   }
- 
 }
 
 .clearfix:after {
