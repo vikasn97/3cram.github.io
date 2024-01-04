@@ -41,9 +41,16 @@
       content="https://metatags.io/images/meta-tags.png"
     />
 
-    <!-- Meta Tags Generated with https://metatags.io -->
+    <!-- stylesheets -->
 
+    <link rel="icon" type="image/x-icon" href="/3cram.github.io/favicon.ico">
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="3cram.css" />
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <style>
       img {
         width: 100%;
@@ -52,153 +59,102 @@
     </style>
   </head>
   <body>
-    <!-- --------------Navigation------------ -->
-    <div class="w3-bar w3-black">
-      <a
-        href="index.html"
-        class="w3-bar-item w3-button w3-mobile w3-light-green"
-        >Home</a
-      >
-      <a href="about.html" class="w3-bar-item w3-button w3-mobile">About</a>
-      <a href="contact.html" class="w3-bar-item w3-button w3-mobile">Contact</a>
-      <a href="documents.html" class="w3-bar-item w3-button w3-mobile"
-        >Documents</a
-      >
-      <a href="market.html" class="w3-bar-item w3-button w3-mobile">Market</a>
-      <a href="windows.html" class="w3-bar-item w3-button w3-mobile">Windows</a>
-      <a href="android.html" class="w3-bar-item w3-button w3-mobile">Android</a>
-      <a href="developer.html" class="w3-bar-item w3-button w3-mobile"
-        >Developers</a
-      >
-      <div class="w3-dropdown-hover w3-mobile">
-        <button class="w3-button">
-          More <i class="fa-solid fa-caret-down"></i>
-        </button>
-        <div class="w3-dropdown-content w3-bar-block w3-dark-grey">
-          <a href="#" class="w3-bar-item w3-button w3-mobile">Link 1</a>
-          <a href="sex.html" class="w3-bar-item w3-button w3-mobile">Link 2</a>
-          <a href="#" class="w3-bar-item w3-button w3-mobile">Link 3</a>
-        </div>
+  <!----------------- Navigator ------------------>
+  <nav id="myTopnav">
+    <a href="index.html" class="active">Home</a>
+    <a href="documents.html">Documents</a>
+    <a href="market.html">Market</a>
+    <a href="developer.html">Developer</a>
+    <a href="windows.html">Windows</a>
+    <a href="android.html">Android</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+    <div class="dropdown">
+      <button class="dropbtn">More
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="sex.html">Sex</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
       </div>
+  </nav>
+  
+  <!-- Gallary -->
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="#">
+        <img src="https://ik.imagekit.io/iykakmrvw/market.jpg?updatedAt=1704359140159" alt="Stock Market" width="600" height="400">
+      </a>
+      <div class="desc">MARKET</div>
     </div>
-
-    <!-- ------------main------------- -->
-    <div class="w3-row-padding w3-margin-top">
-      <div class="w3-quarter" style="max-width: 600px">
-        <div class="w3-card">
-          <img
-            src="https://ik.imagekit.io/iykakmrvw/market.jpeg?updatedAt=1703908482082"
-            alt="STOCK MARKET"
-            width="456"
-            height="304"
-          />
-          <div class="w3-container w3-margin-bottom">
-            <h5>MARKET</h5>
-          </div>
-        </div>
-      </div>
-
-      <div class="w3-quarter" style="max-width: 600px">
-        <div class="w3-card">
-          <img
-            src="https://ik.imagekit.io/iykakmrvw/cartoon_WLMrPS4iZX.jpeg?updatedAt=1701426494062"
-            alt="Developers"
-            width="456"
-            height="304"
-          />
-          <div class="w3-container w3-margin-bottom">
-            <h5>DEVELOPERS</h5>
-          </div>
-        </div>
-      </div>
-
-      <div class="w3-quarter" style="max-width: 600px">
-        <div class="w3-card">
-          <a href="sex.html" style="text-decoration: none">
-            <img
-              src="https://ik.imagekit.io/iykakmrvw/health_ObjUF_s6rV.jpeg?updatedAt=1701426493957"
-              alt="people"
-              width="456"
-              height="304"
-            />
-            <div class="w3-container w3-margin-bottom">
-              <h5>HEALTH</h5>
-            </div>
-          </a>
-        </div>
-      </div>
-
-      <div class="w3-quarter" style="max-width: 600px">
-        <div class="w3-card">
-          <img
-            src="https://ik.imagekit.io/iykakmrvw/editing_FVZ63vVfXy.jpeg?updatedAt=1701426493320"
-            alt="boat"
-            width="456"
-            height="304"
-          />
-          <div class="w3-container w3-margin-bottom">
-            <h5>EDITING</h5>
-          </div>
-        </div>
-      </div>
+  </div>
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="#">
+        <img src="https://ik.imagekit.io/iykakmrvw/developer.jpg?updatedAt=1704359155948" alt="Developer" width="600" height="400">
+      </a>
+      <div class="desc">DEVELOPER</div>
     </div>
-    <div class="w3-row-padding w3-margin-top">
-      <div class="w3-quarter" style="max-width: 600px">
-        <div class="w3-card">
-          <img
-            src="https://ik.imagekit.io/iykakmrvw/study_tZMiO_c6WG.jpeg?updatedAt=1701426493686"
-            alt="Education"
-            width="456"
-            height="304"
-          />
-          <div class="w3-container w3-margin-bottom">
-            <h5>EDUCATION</h5>
-          </div>
-        </div>
-      </div>
-
-      <div class="w3-quarter" style="max-width: 600px">
-        <div class="w3-card">
-          <img
-            src="https://ik.imagekit.io/iykakmrvw/food_lPxS1z3OX.jpg?updatedAt=1701426064050"
-            alt="Food"
-            width="456"
-            height="304"
-          />
-          <div class="w3-container w3-margin-bottom">
-            <h5>Food</h5>
-          </div>
-        </div>
-      </div>
-
-      <div class="w3-quarter" style="max-width: 600px">
-        <div class="w3-card">
-          <img
-            src="https://ik.imagekit.io/iykakmrvw/people_A8yhAoWCs.jpg?updatedAt=1701426063567"
-            alt="people"
-            width="456"
-            height="304"
-          />
-          <div class="w3-container w3-margin-bottom">
-            <h5>People</h5>
-          </div>
-        </div>
-      </div>
-
-      <div class="w3-quarter" style="max-width: 600px">
-        <div class="w3-card">
-          <img
-            src="https://ik.imagekit.io/iykakmrvw/boat_g6gw3BxXw.jpg?updatedAt=1701426063128"
-            alt="boat"
-            width="456"
-            height="304"
-          />
-          <div class="w3-container w3-margin-bottom">
-            <h5>Boat</h5>
-          </div>
-        </div>
-      </div>
+  </div>
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="#">
+        <img src="https://ik.imagekit.io/iykakmrvw/health.jpg?updatedAt=1704359171751" alt="Health" width="600" height="400">
+      </a>
+      <div class="desc">HEALTH</div>
     </div>
+  </div>
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="#">
+        <img src="https://ik.imagekit.io/iykakmrvw/study.jpg?updatedAt=1704361353663" alt="Education" width="600" height="400">
+      </a>
+      <div class="desc">EDUCATION</div>
+    </div>
+  </div>
+  <!-- 2nd Section -->
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="#">
+        <img src="https://ik.imagekit.io/iykakmrvw/edit.jpg?updatedAt=1704360115787" alt="Editor" width="600" height="400">
+      </a>
+      <div class="desc">EDITOR</div>
+    </div>
+  </div>
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="#">
+        <img src="https://ik.imagekit.io/iykakmrvw/food.jpg?updatedAt=1704359374934" alt="Food" width="600" height="400">
+      </a>
+      <div class="desc">FOOD</div>
+    </div>
+  </div>
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="#">
+        <img src="https://ik.imagekit.io/iykakmrvw/businesss.jpg?updatedAt=1704360209268" alt="Business" width="600" height="400">
+      </a>
+      <div class="desc">BUSINESS</div>
+    </div>
+  </div>
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="#">
+        <img src="https://ik.imagekit.io/iykakmrvw/lifestyle.jpg?updatedAt=1703913625646" alt="lifestyle" width="600" height="400">
+      </a>
+      <div class="desc">LIFESTYLE</div>
+    </div>
+  </div>
+      
+
+  <!--ClearFix  -->
+  <div class="clearfix"></div>
+
+
+  <!-- JavaSript -->
+  <script src="3cram.js"></script>
 
     <!--Start of Tawk.to Script-->
     <script type="text/javascript">

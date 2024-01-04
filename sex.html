@@ -5,7 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home Page</title>
+    <!-- stylesheets -->
+
+    <link rel="icon" type="image/x-icon" href="/3cram.github.io/favicon.ico">
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="3cram.css" />
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <script src="script.js" crossorigin="anonymous"></script>
 
     <style>
@@ -17,15 +26,26 @@
   </head>
   <body>
     <!-- --------------Navigation------------ -->
-    <div>
-      <div class="w3-bar w3-black">
-        <a href="index.html" class="w3-bar-item w3-button w3-mobile w3-green">Home</a>
-        <a href="about.html" class="w3-bar-item w3-button w3-mobile">About</a>
-        <a href="contact.html" class="w3-bar-item w3-button w3-mobile">Contact</a>
-        <a href="windows.html" class="w3-bar-item w3-button w3-mobile">Windows</a>
-        <a href="android.html" class="w3-bar-item w3-button w3-mobile">Android</a>
-        <a href="developer.html" class="w3-bar-item w3-button w3-mobile">Developers</a>
-      </div>
+    <nav id="myTopnav">
+      <a href="index.html" class="active">Home</a>
+      <a href="documents.html">Documents</a>
+      <a href="market.html">Market</a>
+      <a href="developer.html">Developer</a>
+      <a href="windows.html">Windows</a>
+      <a href="android.html">Android</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+      <div class="dropdown">
+        <button class="dropbtn">More
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="sex.html">Sex</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+    </nav>
 
       <!-- main Topic -->
       <div>
